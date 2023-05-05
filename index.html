@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <script src="adivinhacao.js"></script>
+        <title>Técnico INFO - 921 A</title>
+    </head>
+
+    <body>
+        <h1>Jogo de Adivinhação</h1>
+        <h2>Objetivo: Adivinhar um número gerado aleatoriamente de 1 a 10</h2>
+
+        <p style="text-align: center;">
+            Escolha um nível:<br>
+
+            Nível 1 <input type="radio" name="rdNivel" id="rdNivel" value="1" checked><br>
+            Nível 2 <input type="radio" name="rdNivel" id="rdNivel" value="2"><br>
+            Nível 3 <input type="radio" name="rdNivel" id="rdNivel" value="3"><br>
+
+            <input type="button" id="btnJogar" value="Jogar" onclick="jogar()">
+        </p>
+
+        <div id="campoDeEntrada" style="display: none;">
+            <p style="text-align: center;">
+                Chute: <input type="text" id="txtChute">
+                <input type="button" id="btnVerificarChute" value="Verificar chute" onclick="validarChute(document.getElementById('txtChute').value)">
+                <input type="button" id="btnLimpar" value="Limpar" onclick="limpar()">
+            </p>
+        </div>
+
+        <div id="campoMensagem" style="text-align:center; font-style: italic; color: red; height: 30px;">
+            <!-- Aqui aparecerá as mensagens -->
+        </div> <br>
+    </body>
+</html>
