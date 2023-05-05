@@ -1,1 +1,2 @@
-# alpg20222
+# Projeto da disciplina de ALPG 2022-2
+
